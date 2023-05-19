@@ -1,0 +1,180 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 5%;
+    background-color: #a4724d;
+}
+
+.header .nav {
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.header .nav .logo {
+    height: 100%;
+    display: flex;
+}
+
+.header .nav .logo a {
+    margin: auto;
+    height: 100%;
+}
+
+.header .nav .logo a img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.header .nav .menu-bar {
+    height: 100%;
+    display: flex;
+}
+
+.header .nav .menu-bar a:hover {
+    border-bottom: solid 4px rgba(252, 1, 1, 0.964);
+}
+
+.header .nav .menu-bar a {
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+}
+
+.header .nav .login {
+    display: flex;
+    height: 100%;
+}
+
+.header .nav .login a {
+    margin: auto;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    height: 90%;
+    width: 100vw;
+    display: flex;
+}
+
+.main .side-bar {
+    width: 15%;
+    background-color: #ECF9FF;
+}
+
+.main .side-bar .contain {
+    width: 80%;
+    margin: auto;
+}
+
+.main .side-bar .contain .general {
+    margin: 10% 0;
+}
+
+.main .side-bar .contain .manager-item {
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .side-bar .contain .manager-item button {
+    padding: 10px;
+    background-color: #f9f9fb;
+    border-radius: 3px;
+    outline: 0;
+    min-width: 90%;
+    border: solid 1px grey;
+}
+
+.main .side-bar .contain .manager-item button:hover {
+    border: solid 1px black;
+}
+
+.main .side-bar .contain .manager-item .choose-btn {
+    border: solid 2px #7b5742 !important;
+    transform: translateX(10%);
+
+}
+
+.main .information-object {
+    width: 85%;
+    background-color: #FFFBEB;
+}
+
+.main .information-object .new-table {
+    padding: 2%;
+}
+
+.main .information-object .list-table,
+.main .information-object .list-menu {
+    width: 100%;
+    padding: 0 2%;
+    max-height: 80%;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.main .information-object .list-table table thead,
+.main .information-object .list-menu table thead {
+    position: sticky;
+    top: 0;
+    background-color: #9a8881;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.main .information-object .list-table table tbody .btn-edit-name-table,
+.main .information-object .list-table table tbody .btn-delete-table,
+.main .information-object .list-menu table tbody .btn-edit-item,
+.main .information-object .list-menu table tbody .btn-delete-item {
+    cursor: pointer;
+
+}
+
+.main .information-object .list-table table tbody .btn-edit-name-table:hover,
+.main .information-object .list-menu table tbody .btn-edit-item:hover {
+    color: rgb(4, 226, 4);
+}
+
+.main .information-object .list-table table tbody .btn-delete-table:hover,
+.main .information-object .list-menu table tbody .btn-delete-item:hover {
+    color: red;
+}
+
+.main .information-object .list-menu table tbody .pic {
+    max-width: 5% !important;
+    text-align: left;
+}
+
+.main .information-object .list-menu table tbody tr td img {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+
+.footer {
+    height: 5%;
+    background-color: #7b5742;
+}
+
+#newTableModal .modal-body .err,
+#updateTableModal .modal-body .update-table-err {
+    color: red;
+}

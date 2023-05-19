@@ -1,0 +1,421 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 5%;
+    background-color: #a4724d;
+}
+
+.header .nav {
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.header .nav .logo {
+    height: 100%;
+    display: flex;
+}
+
+.header .nav .logo a {
+    margin: auto;
+    height: 100%;
+}
+
+.header .nav .logo a img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.header .nav .menu-bar {
+    height: 100%;
+    display: flex;
+}
+
+.header .nav .menu-bar a:hover {
+    border-bottom: solid 4px rgba(252, 1, 1, 0.964);
+}
+
+.header .nav .menu-bar a {
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+}
+
+.header .nav .login {
+    display: flex;
+    height: 100%;
+}
+
+.header .nav .login a {
+    margin: auto;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    display: flex;
+    height: 90%;
+    width: 100vw;
+}
+
+.main .tables {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 0;
+    width: 30%;
+}
+
+.main .tables .floor {
+    height: 10%;
+    display: flex;
+}
+
+.main .tables .floor .btnFloor {
+    height: 60%;
+    width: 40% !important;
+    margin: auto 2px !important;
+    background-color: rgb(79, 54, 34);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 5px #6d6d69;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: .2s;
+}
+
+.main .tables .floor .btnFloor:active {
+    transform: translateX(4px);
+}
+
+.main .tables .floor .chooseBtn {
+    background-color: rgb(186, 136, 86);
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.main .tables .list-tables {
+    height: 80%;
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+
+.main .tables .list-tables .table1 {
+    width: 70px !important;
+    height: 70px !important;
+    margin: 10px;
+    background-color: #fbb389;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    border-color: #7b5742;
+    box-shadow: 2px 3px #888888;
+    text-decoration: none;
+    background-image: url(../img/table.png) !important;
+}
+
+.main .tables .list-tables .table1:hover {
+    background-color: #c88a66;
+}
+
+.main .tables .list-tables .onBill {
+    background-color: #a2530aaa !important;
+}
+
+.main .tables .list-tables .onBill:hover {
+    background-color: #8a6542 !important;
+}
+
+.main .list-all-menu {
+    width: 35%;
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.main .list-all-menu .choose-search {
+    height: 10%;
+}
+
+.main .list-all-menu .choose-search select {
+    max-height: 37.6px !important;
+    width: 30% !important;
+    margin: auto 0px;
+}
+
+
+.main .list-all-menu .choose-search .input-group {
+    margin: auto 0px auto 5%;
+}
+
+.main .list-all-menu .table-wrap {
+    max-height: 80%;
+    width: 100% !important;
+    overflow: auto;
+}
+
+
+.main .list-all-menu .table-wrap table {
+    border-collapse: collapse;
+    width: 100% !important;
+    margin: 0;
+}
+
+.main .list-all-menu .table-wrap table thead {
+    position: sticky;
+    top: 0;
+    background-color: #9a8881;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.main .list-all-menu .table-wrap table thead tr .pic {
+    width: 10% !important;
+    text-align: center;
+}
+
+.main .list-all-menu .table-wrap table thead tr .name {
+    width: 35% !important;
+}
+
+.main .list-all-menu .table-wrap table thead tr .unit {
+    width: 10% !important;
+    text-align: center;
+}
+
+.main .list-all-menu .table-wrap table thead tr .unit-price {
+    width: 25% !important;
+    text-align: right;
+}
+
+.main .list-all-menu .table-wrap table thead tr .select {
+    width: 20% !important;
+    text-align: center;
+}
+
+.main .list-all-menu .table-wrap table tbody tr td img {
+    height: 30px;
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+.main .list-all-menu .table-wrap table tbody tr td p {
+    text-align: end;
+    margin: auto;
+}
+
+.main .list-all-menu .table-wrap table tbody tr td button {
+    width: 100%;
+    font-size: 10px;
+}
+
+
+.main .none-invoice {
+    height: 100%;
+    width: 35%;
+}
+
+.main .none-invoice img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main .table-ready {
+    display: none;
+    height: 100%;
+    width: 35%;
+}
+
+.main .table-ready img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main .table-ready .notice {
+    color: rgba(20, 182, 20, 0.756);
+    text-align: center;
+}
+
+.main .invoice {
+    height: 100%;
+    width: 35%;
+    background-color: #efe2cc;
+    padding: 10px;
+    margin: 0;
+}
+
+.main .invoice .infor-bill {
+    height: 10%;
+}
+
+.main .invoice .infor-bill .name-bill {
+    margin: auto 0;
+}
+
+.main .invoice .table-wrap {
+    max-height: 80%;
+    width: 100% !important;
+    overflow: auto;
+}
+
+.main .invoice .table-wrap table {
+    border-collapse: collapse;
+    width: 100% !important;
+    margin: 0;
+}
+
+.main .invoice .table-wrap table thead {
+    position: sticky;
+    top: 0;
+    background-color: #9a8881;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.main .invoice .table-wrap table th,
+.main .invoice .table-wrap table td {
+    vertical-align: sub;
+}
+
+.main .invoice .table-wrap table thead tr .numerical-order {
+    width: 5% !important;
+}
+
+.main .invoice .table-wrap table thead tr .name-item {
+    width: 25% !important;
+}
+
+.main .invoice .table-wrap table thead tr .unit-price {
+    width: 15% !important;
+}
+
+.main .invoice .table-wrap table thead tr .quantity {
+    width: 25% !important;
+    text-align: center;
+}
+
+.main .invoice .table-wrap table thead tr .amount {
+    width: 20% !important;
+    text-align: end;
+}
+
+.main .invoice .table-wrap table thead tr .delete {
+    width: 10% !important;
+}
+
+.main .invoice .table-wrap table tbody .unitP {
+    text-align: end;
+}
+
+.main .invoice .table-wrap table tbody .quantityChild {
+    text-align: center;
+}
+
+.main .invoice .table-wrap table tbody .quantityChild input {
+    width: 50%;
+    margin: 0 5px;
+    text-align: end;
+}
+
+.main .invoice .table-wrap table tbody .quantityChild input::-webkit-outer-spin-button,
+.main .invoice .table-wrap table tbody .quantityChild input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.main .invoice .table-wrap table tbody .amount-item {
+    text-align: end;
+}
+
+.main .invoice .table-wrap table tbody .icon-delete {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.main .invoice .table-wrap table tbody .icon-trash {
+    fill: red;
+}
+
+.main .invoice .table-wrap table tbody .trash-lid {
+    transform-origin: right bottom;
+    transition: transform 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.main .invoice .table-wrap table tbody .icon-trash:hover .trash-lid {
+    transform: translateY(-2px) rotate(30deg);
+}
+
+.main .invoice .sum-total {
+    display: flex;
+    justify-content: end;
+    height: 10%;
+}
+
+.main .invoice .sum-total p {
+    margin: auto 0;
+}
+
+
+.main .invoice .sum-total .payment {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.main .invoice .sum-total .payment button {
+    margin: auto 0;
+}
+
+.main .invoice .sum-total input {
+    height: 50%;
+    max-width: 20%;
+    text-align: end;
+    margin: auto 0 auto 5px;
+}
+
+.footer {
+    height: 5%;
+    background-color: #7b5742;
+}
+
+
+#paymentModal .table-bill-confirm thead tr .unit-price,
+#paymentModal .table-bill-confirm thead tr .quantity,
+#paymentModal .table-bill-confirm thead tr .amount,
+#paymentModal .table-bill-confirm tbody tr .unitPModal,
+#paymentModal .table-bill-confirm tbody tr .quantityChildModal,
+#paymentModal .table-bill-confirm tbody tr .amount-itemModal {
+    text-align: end;
+}
+
+#deleteModal .modal-header {
+    color: red;
+}
